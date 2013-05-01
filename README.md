@@ -5,12 +5,14 @@ A simple jQuery plugin to allow you to drag the visible area of an element aroun
 ###Usage
 
 HTML
+
     <div id="viewport">
         <div class="content"></div>
     </div>
 
 
 JS
+
     $('#viewport').draggableviewport({
         draggableContent: '.content',   // the container within the viewport that will be repositioned
         allowVertical: true,            // allow vertical dragging
