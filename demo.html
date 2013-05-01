@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">  
+
+  <head>  
+    <meta charset="utf-8">
+
+    <title>Draggable Viewport Test</title>  
+
+    <link href="demo.css" media="all" rel="stylesheet" type="text/css"> 
+  </head> 
+
+  <body>
+    <div id="test1" class="viewport">
+      <div class="content"></div>
+    </div> 
+    <div id="test2" class="viewport">
+      <div class="content"></div>
+    </div>  
+    <div id="test3" class="viewport">
+      <div class="content"></div>
+    </div> 
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script> 
+    <script src="code/jquery.draggableviewport.js" type="text/javascript"></script>    
+    <script type="text/javascript">  
+      $(document).ready(function() {  
+        $('#test1').draggableviewport(); 
+        $('#test2').draggableviewport({
+          allowVertical: false,
+          draggableContent: '.content',
+          animationLength: 1000
+        });
+        $('#test3').draggableviewport({
+          allowHorizontal: false,
+          draggableContent: '.content'
+        }); 
+      });  
+    </script> 
+  </body>  
+
+</html>
